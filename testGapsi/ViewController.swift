@@ -44,7 +44,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let request = AF.request("https://00672285.us-south.apigw.appdomain.cloud/demo-gapsi/search?query="+search, headers: headers)
         request.responseJSON { (data) in
             let json2 = JSON(data.data!)
-            print(json2)
             self.items = json2["items"].array!
             self.tableView.reloadData()
         }
@@ -80,6 +79,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if(searching){
             self.searchBar.text = searches[indexPath.row]
             searching = false
+            self.tableView.reloadData()
             search(search: searches[indexPath.row])
         }
     }
