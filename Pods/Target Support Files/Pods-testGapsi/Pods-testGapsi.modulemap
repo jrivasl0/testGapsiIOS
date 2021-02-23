@@ -1,0 +1,6 @@
+module Pods_testGapsi {
+  umbrella header "Pods-testGapsi-umbrella.h"
+
+  export *
+  module * { export * }
+}
