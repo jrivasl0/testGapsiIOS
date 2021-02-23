@@ -13,9 +13,13 @@
 		521CCB3425E481410041F802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521CCB3225E481410041F802 /* Main.storyboard */; };
 		521CCB3625E481440041F802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521CCB3525E481440041F802 /* Assets.xcassets */; };
 		521CCB3925E481440041F802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521CCB3725E481440041F802 /* LaunchScreen.storyboard */; };
+		521CCB4225E488420041F802 /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = 521CCB4125E488420041F802 /* podfile */; };
+		52599C5A25E4B195007EA5D4 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52599C5825E4B195007EA5D4 /* ItemTableViewCell.swift */; };
+		BB5EE59DBD26D45CD5F765A3 /* libPods-testGapsi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B4AAF54216D269C7C3E607 /* libPods-testGapsi.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4287D0DF86BB432AC2325FD3 /* Pods-testGapsi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testGapsi.debug.xcconfig"; path = "Target Support Files/Pods-testGapsi/Pods-testGapsi.debug.xcconfig"; sourceTree = "<group>"; };
 		521CCB2925E481410041F802 /* testGapsi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testGapsi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		521CCB2C25E481410041F802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		521CCB2E25E481410041F802 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		521CCB3525E481440041F802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		521CCB3825E481440041F802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		521CCB3A25E481440041F802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		521CCB4125E488420041F802 /* podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		52599C5825E4B195007EA5D4 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		78A3FE790FF31C46F89FE70F /* Pods-testGapsi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testGapsi.release.xcconfig"; path = "Target Support Files/Pods-testGapsi/Pods-testGapsi.release.xcconfig"; sourceTree = "<group>"; };
+		E2B4AAF54216D269C7C3E607 /* libPods-testGapsi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testGapsi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5EE59DBD26D45CD5F765A3 /* libPods-testGapsi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +49,11 @@
 		521CCB2025E481410041F802 = {
 			isa = PBXGroup;
 			children = (
+				521CCB4125E488420041F802 /* podfile */,
 				521CCB2B25E481410041F802 /* testGapsi */,
 				521CCB2A25E481410041F802 /* Products */,
+				E344BC669A17C747323256C6 /* Pods */,
+				EEE57DBC1EEBAA9D9C94E886 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +68,7 @@
 		521CCB2B25E481410041F802 /* testGapsi */ = {
 			isa = PBXGroup;
 			children = (
+				52599C5725E4B128007EA5D4 /* cells */,
 				521CCB2C25E481410041F802 /* AppDelegate.swift */,
 				521CCB2E25E481410041F802 /* SceneDelegate.swift */,
 				521CCB3025E481410041F802 /* ViewController.swift */,
@@ -67,6 +80,31 @@
 			path = testGapsi;
 			sourceTree = "<group>";
 		};
+		52599C5725E4B128007EA5D4 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				52599C5825E4B195007EA5D4 /* ItemTableViewCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		E344BC669A17C747323256C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4287D0DF86BB432AC2325FD3 /* Pods-testGapsi.debug.xcconfig */,
+				78A3FE790FF31C46F89FE70F /* Pods-testGapsi.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EEE57DBC1EEBAA9D9C94E886 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2B4AAF54216D269C7C3E607 /* libPods-testGapsi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +112,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 521CCB3D25E481440041F802 /* Build configuration list for PBXNativeTarget "testGapsi" */;
 			buildPhases = (
+				BAA3BCEA39EFF8917394274B /* [CP] Check Pods Manifest.lock */,
 				521CCB2525E481410041F802 /* Sources */,
 				521CCB2625E481410041F802 /* Frameworks */,
 				521CCB2725E481410041F802 /* Resources */,
@@ -126,17 +165,44 @@
 			files = (
 				521CCB3925E481440041F802 /* LaunchScreen.storyboard in Resources */,
 				521CCB3625E481440041F802 /* Assets.xcassets in Resources */,
+				521CCB4225E488420041F802 /* podfile in Resources */,
 				521CCB3425E481410041F802 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BAA3BCEA39EFF8917394274B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testGapsi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		521CCB2525E481410041F802 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52599C5A25E4B195007EA5D4 /* ItemTableViewCell.swift in Sources */,
 				521CCB3125E481410041F802 /* ViewController.swift in Sources */,
 				521CCB2D25E481410041F802 /* AppDelegate.swift in Sources */,
 				521CCB2F25E481410041F802 /* SceneDelegate.swift in Sources */,
@@ -283,11 +349,13 @@
 		};
 		521CCB3E25E481440041F802 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4287D0DF86BB432AC2325FD3 /* Pods-testGapsi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = testGapsi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,11 +369,13 @@
 		};
 		521CCB3F25E481440041F802 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78A3FE790FF31C46F89FE70F /* Pods-testGapsi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = testGapsi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
